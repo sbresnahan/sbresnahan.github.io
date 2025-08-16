@@ -77,6 +77,6 @@ I graduated with a PhD in [Molecular, Cellular, and Integrative Biosciences](htt
 
 I graduated in 2019 from the University of Nebraska at Omaha (UNO) with a BS in [Neuroscience](https://www.unomaha.edu/college-of-arts-and-sciences/neuroscience/index.php). As an undergraduate, I was awarded a research grant through the UNO [Fund for Undergraduate Scholarly Experience](https://www.google.com/search?client=safari&rls=en&q=unomaha+fuse&ie=UTF-8&oe=UTF-8) to investigate the genetic basis of stress coping behaviors in zebrafish [using CRISPR/Cas9](https://digitalcommons.unomaha.edu/srcaf/2019/Schedule/23/) with [Dr. Ryan Wong](https://wonglab.unomaha.community) in the Department of Biology. I also worked with Dr. Jim Rogers in the Department of Mathematics to develop a [network model](https://digitalcommons.unomaha.edu/srcaf/2019/Schedule/118/) of protein-protein interactions in macrophage cells to study HIV infection.
 
-[See my CV](/assets/docs/Bresnahan_CV_0425.pdf) for more details.
+[See my CV](/assets/docs/CV_STB_081625.pdf) for more details.
 
 {% include gallery %}
