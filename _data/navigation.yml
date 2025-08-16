@@ -1,7 +1,5 @@
 # main links
 main:
-  - title: "Profile"
-    url: /
   - title: "Software"
     url: /software/
   - title: "Publications"
