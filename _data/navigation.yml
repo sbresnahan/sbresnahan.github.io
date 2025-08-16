@@ -2,11 +2,13 @@
 main:
   - title: "Profile"
     url: /
-  - title: "Blog"
-    url: https://seantbresnahan.substack.com
+  - title: "Software"
+    url: /software/
   - title: "Publications"
     url: https://scholar.google.com/citations?hl=en&user=yqoHycoAAAAJ
   - title: "GitHub"
     url: https://github.com/sbresnahan
+  - title: "Blog"
+    url: https://seantbresnahan.substack.com
   - title: "CV"
     url: /assets/docs/CV_STB_080525.pdf
