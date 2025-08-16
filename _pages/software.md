@@ -2,8 +2,6 @@
 title: "Software"
 layout: splash
 permalink: /software/
-intro: 
-  - excerpt: 'I maintain and contribute to several R packages, all available on GitHub'
 feature_row:
   - image_path: /assets/images/scAmbi.png
     url: "https://github.com/sbresnahan/scAmbi"
@@ -26,8 +24,8 @@ feature_row:
 
 # Software
 
+I maintain and contribute to several R packages, all available on GitHub
+
 ---
 
-{% include feature_row id="intro" type="left" %}
-
-{% include feature_row id="feature_row" type="center" %}
+{% include feature_row %}
