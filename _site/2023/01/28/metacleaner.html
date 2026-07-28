@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Template: https://github.com/luost26/academic-homepage -->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Metacleaner - Sean T. Bresnahan</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css" integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css" integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <!-- Math and Code -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100" >
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top mb-5 shadow-sm">
+    <div class="container-lg">
+        <a class="navbar-brand"><strong>Sean T. Bresnahan</strong></a>
+        <button class="navbar-toggler" style="font-size: 1em; padding: 0.5em;" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-map"></i> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item ">
+                    
+                    <a class="nav-link" href="/">Home</a>
+                    
+                </li>
+                
+                <li class="nav-item ">
+                    
+                    <a class="nav-link" href="/publications">Publications</a>
+                    
+                </li>
+                
+                <li class="nav-item ">
+                    
+                    <a class="nav-link" href="/showcase">Software</a>
+                    
+                </li>
+                
+                <li class="nav-item active">
+                    
+                    <a class="nav-link" href="https://seantbresnahan.substack.com" target="_blank" rel="noopener">Blog</a>
+                    
+                </li>
+                
+                <li class="nav-item ">
+                    
+                    <a class="nav-link" href="/assets/docs/STB_CV.pdf" target="_blank" rel="noopener">CV</a>
+                    
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <main class="flex-grow-1">
+        <div class="blog-layout-wrapper">
+            <div class="blog-main">
+                <article class="bg-white rounded-xl p-4 mb-4" style="border: 1px solid #f0f0f0;">
+                    <header class="mb-4">
+                        <h1 class="display-4 mb-3">Metacleaner</h1>
+                        <div class="text-muted mb-3">
+                            <i class="fas fa-calendar-alt"></i> January 28, 2023
+                            
+                                <span class="ml-3">
+                                    <i class="fas fa-tags"></i>
+                                    
+                                        <span class="badge badge-light">Metabarcoding</span>
+                                    
+                                        <span class="badge badge-light">Bioinformatics</span>
+                                    
+                                        <span class="badge badge-light">R</span>
+                                    
+                                </span>
+                            
+                        </div>
+                    </header>
+
+                    <div class="blog-content">
+                        <h2 id="dna-metabarcoding">DNA metabarcoding</h2>
+
+<p><a href="https://seantbresnahan.substack.com/p/metacleaner">Update 05/06/25 - Read this article on Substack</a></p>
+
+<p>Say you’re managing honey bee colonies for the purpose of honey production, and you want to know what their product is made of. What sources of nectar are your bees foraging on? You could spend weeks following your bees around, taking note of which flowers they frequent. You might notice some common genera represented - like clover (<em>Trifolium</em>) or locust (<em>Robinia</em>). But, knowing that <em>Apis mellifera</em> is a generalist forager and you’ve got tens of thousands of bees per colony, you could never possibly collect as much data as they already are. So, how can you leverage that data? (Or, if you’re totally uninterested in the composition of honey, say you’re interested in what species of bacteria are colonizing your GI tract. Insert your own “I have an environmental sample and I want to know what’s in it” problem here.)</p>
+
+<p><a href="https://en.wikipedia.org/wiki/Metabarcoding">DNA metabarcoding</a> is a method for assessing taxonomic composition within a sample by “barcoding” of DNA: matching up the sequences of DNA molecules in a sample with a reference sequence database. The process is straightforward: sample homogenization, DNA extraction, PCR amplification, sequencing, and data analysis.</p>
+
+<p><img src="/assets/images/dna-metabarcoding.png" alt="metacleaner-dna-metabarcoding" /></p>
+
+<h2 id="assumptions-and-problems">Assumptions and problems</h2>
+
+<p>Like all scientific methods, the basis of metabarcoding rests on a few fundamental assumptions:</p>
+<ul>
+  <li>1) You’ve not contaminated your sample while handling it, and</li>
+  <li>2) The loci that you’re amplifying (and by extension, the barcode sequences in your reference database) are sufficiently different between taxa to assign short sequencing reads to taxa.</li>
+</ul>
+
+<p>In this post, I want to address some problems that emerge from assumption #2, and propose some solutions. Throughout, I will use data generated through metabarcoding analysis of European honey bee <em>Apis mellifera</em> honey samples collected from Pennsylvania beekeepers, using barcode sequences extracted from the <a href="https://mbmg.pensoft.net/article/68155/">ITS1/ITS2 region for plant DNA barcoding</a>. The reference sequence databases used here were constructed by retrieving all publicly available ITS1/ITS2 region sequences identified in plants within Magnoliopsida (the class of flowering plants that pollinator insects like the honey bee are mutualists with) which were accessible on NCBI as of 01-28-22, and using open-source software (<a href="https://github.com/RTRichar/MetaCurator">MetaCurator</a>) to automatically identify and extract the barcode marker region of interest from those sequences. <a href="https://github.com/sbresnahan/metacleaner/blob/main/ITS1_ITS2_databases.md">See here for database construction and curation methods</a>. In total, the databases are composed of 61,717 ITS1 barcodes representing 5,687 genera, with an average of 10.86 barcodes per genera (SD = 37.56), and 58,482 ITS2 barcodes representing 5,489 genera, with an average of 10.65 barcodes per genera (SD = 35.28).</p>
+
+<h3 id="problem-1-mislabeled-sequences">Problem #1: mislabeled sequences</h3>
+<p>If your reference database is composed of sequences retrieved from open-access repositories like <a href="https://www.ncbi.nlm.nih.gov/nucleotide/">NCBI GenBank</a>, you will unfortunately encounter many sequences that have been mislabeled. In some cases, these are sequences which GenBank staff could not verify as being of the taxa that the uploader identified them as being. For example, sequence accession <a href="https://www.ncbi.nlm.nih.gov/nuccore/FJ860092.1">FJ860092.1</a> is labeled as being from a sample of Chinese yam, <em>Dioscorea polystachya</em> - however, this sequence is 100% identical to sequence accession <a href="https://www.ncbi.nlm.nih.gov/nuccore/KX826865.1">KX826865.1</a> from an “uncultured fungus” sample, which could also not be verified. In other cases, they have passed the verification process and are thus “valid” sequences. For example, sequence accession <a href="https://www.ncbi.nlm.nih.gov/nuccore/AJ251663.1">AJ251663.1</a> is labeled as being from a sample of an Italian alder, <em>Alnus cordata</em> - however, this sequence is 100% identical to sequence accession <a href="https://www.ncbi.nlm.nih.gov/nuccore/MW215901.1">MW215901.1</a> again from an unculture fungus sample, possibly containing <em>Malassezia restricta</em> (which are <a href="https://en.wikipedia.org/wiki/Malassezia">commonly found on the skin surfaces of many animals, including humans</a>). This is especially problematic for honey sample metabarcoding, as <a href="https://www.beeculture.com/honey-bees-fungi/#:~:text=Most%20beekeepers%20are%20familiar%20with,colonies%20all%20around%20the%20world.">many genera of fungi</a> inhabit flowers, honey bees, honey bee colonies, <a href="https://imafungus.biomedcentral.com/articles/10.1186/s43008-019-0021-7">and thus, honey</a>.</p>
+
+<p><img src="/assets/images/metacleaner-plantvfungi.jpg" alt="metacleaner-plantvfungi" /></p>
+
+<p>This problem and some solutions have already been discussed in detail:</p>
+<ul>
+  <li><a href="https://academic.oup.com/nar/article/44/11/5022/2468320?login=true">Phylogeny-aware identification and correction of taxonomically mislabeled sequences</a></li>
+  <li><a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/2041-210X.12824">Using taxonomic consistency with semi-automated data pre-processing for high quality DNA barcodes</a></li>
+</ul>
+
+<p>These methods use algorithms to try and identify mislabeled sequences and place them within their correct lineages. But, what if I don’t understand what an Evolutionary Placement Algorithm is? I have tens of thousands of barcodes, how can I possibly check through them all to be sure they have been correctly relabeled?</p>
+
+<p>Most importantly, how pervasive is this problem, really? Using <a href="https://github.com/RTRichar/SimpleSequenceClassification">a popular metabarcoding bioinformatics pipeline</a> for reference, where sequencing reads are assigned to a genus if $\geq$98% of the read’s sequence is shared with a barcode’s sequence (in terms of sequence identity and query coverage), I checked to see how many of the barcodes in my ITS1 &amp; ITS2 databases matched non-plant (not within Embryophyta) sequences at these thresholds. I downloaded all publically-accessible non-plant ITS1/ITS2 region sequences from NCBI and used <a href="https://www.ncbi.nlm.nih.gov/books/NBK279690/">local BLASTn searches</a> to identify matching barcodes. I excluded sequences from “uncultured eukaryotic clone” samples, as these are often sequences from dust samples which contain plant pollen (e.g., sequence accession <a href="https://www.ncbi.nlm.nih.gov/nuccore/KF800566.1">KF800566.1</a> for which 98.33% of its sequence is 100% identical with sequences in several species of Willow (<em>Salix</em>). I found this problem affects roughly <strong>1%</strong> of ITS1 barcodes and <strong>6.1%</strong> of ITS2 barcodes. Why so many more for ITS2? Leave a comment below if you’ve got any insight.</p>
+
+<p>What about valid plant sequences that are mislabeled as belonging to - or look very similar ($\geq$98%) to - <em>different plants</em>?</p>
+
+<h3 id="problem-2-sequence-conservation">Problem #2: sequence conservation</h3>
+<p>Metabarcoding is limited by sequence evolution; the extent of this limitation increases as the length of the barcode region decreases. In extracting a specific barcode region of interest, irrelevant sequence is trimmed out, which limits the total space for any given sequencing read to align. This decreases our runtime, but also increases the likelihood that two barcode sequences will be identical. Depending on the pipeline, reads that align equally well to multiple barcodes may be randomly assigned and skew the taxonomic composition of your sample.</p>
+
+<p>Okay, but, for what percentage of barcodes in my database is this really an issue? What is the potential false-positive rate in my analysis due to this problem? Using <a href="https://github.com/sherrillmix/taxonomizr">taxonomizr</a> to retrieve taxonomy information for each accession in the database and their blast hits against all ITS1/ITS2 region sequences in Embryophyta, I conducted step-wise filtering of the barcodes to remove those which matched: sequences not within Magnoliopsida, sequences in multiple different genera, and sequences in only one but a different genus than the barcode’s accession was annotated as belonging to. Here is what I found:</p>
+
+<p><img src="/assets/images/metacleaner-table1.png" alt="metacleaner-table1" /></p>
+
+<p><img src="/assets/images/metacleaner-table2.png" alt="metacleaner-table2" /></p>
+
+<p>It is clear that there are, unfortunately, many barcodes in this database which will lead to inflated counts for many genera. For what percentage of the sequencing reads in my samples is this really an issue?</p>
+
+<p><img src="/assets/images/metacleaner-fig1.png" alt="metacleaner-figure1" /></p>
+
+<p><em>Figure 1. Reads from 10 honey samples matching ITS1 and ITS2 barcodes at each step in the filtering process. Step 2: barcodes that match non-plant sequences. Step 3: barcodes that match sequences in plants not within Magnoliopsida. Step 4: barcodes that match sequences in multiple genera. Step 5: barcodes that match sequences in the wrong genus.</em></p>
+
+<p>Between <strong>15-55%</strong> of the reads in these samples are mapping to barcodes that would be removed because they match non-plant (often fungal) sequences. Some of these reads may truly have originated from fungi, but they will also inflate counts for the genera that these barcodes were annotated as belonging to. Not great! Even after filtering these barcodes from the database, up to <strong>1%</strong> of the reads in these samples are mapping to barcodes that do not differentiate genera. That’s a lot of false positives.</p>
+
+<h2 id="solution-metacleaner---software-for-automated-curation-of-barcode-sequence-databases-for-metabarcoding-and-metagenomics">Solution: metacleaner - software for automated curation of barcode sequence databases for metabarcoding and metagenomics</h2>
+
+<p>Hopefully it is clear by now that these two problems are really the same - the fundamental problem - <em>are the sequences in my database sufficiently different between taxa?</em> A simple solution is to automate the process of searching for sequence conservation between our barcodes and sequences in other taxa, and filtering non-unique barcodes in a taxonomically-aware way. You can find my attempt at providing an open-source software solution for this problem under the <a href="/showcase">software</a> section of this website.</p>
+
+<p>metacleaner takes as input a .fasta file of barcodes generated by tools like MetaCurator. The workflow is straightforward:</p>
+
+<ol>
+  <li>
+    <p>Barcodes are searched for hits against known undesired (in this example, non-plant) sequences using blastn. Barcodes with hits above user-defined thresholds for percentage identity and query coverage are flagged as mislabeled.</p>
+  </li>
+  <li>
+    <p>Barcodes are then searched for hits against known desired (in this example, all of Embryophyta) sequences using blastn. Barcodes with no hits above user-defined thresholds for percentage identity and query coverage are flagged as potentially mislabeled, while hits above these thresholds are flagged as candidate barcodes.</p>
+  </li>
+  <li>
+    <p>Taxonomy info for the top hits against desired sequences for both the candidate barcodes and potentially mislabeled barcodes are retrieved using taxonomizr and compared against the taxonomy info of the query barcode. If the taxonomy info of the query and subject (including cases where there are multiple hits) are not similar at a user-defined level of taxonomy (one of superkingdom, phylum, class, order, family, genus, or species), the query barcode is flagged as mislabeled. An additional inclusion filter can be set; all hits at the percentage identity and query coverage thresholds must have this information (e.g., must be within Magnoliopsida) or the query barcode will be flagged as mislabeled.</p>
+  </li>
+  <li>
+    <p>Finally, mislabeled barcodes are filtered from the database.</p>
+  </li>
+</ol>
+
+<p>How does this impact the read alignments?</p>
+
+<p><img src="/assets/images/metacleaner-fig2.png" alt="metacleaner-figure2" /></p>
+
+<p><em>Figure 2. Reads from 10 honey samples matching ITS1 and ITS2 barcodes at each step in the filtering process.</em></p>
+
+<p><img src="/assets/images/metacleaner-fig3.png" alt="metacleaner-figure3" /></p>
+
+<p><em>Figure 3. Genera of reads from 10 honey samples matching ITS1 and ITS2 barcodes at each step in the filtering process.</em></p>
+
+<p>In these samples, this conservative barcode filtering process ultimately does not noticeably reduce the number of usable reads, especially for ITS2. How do the original and filtered databases compare in a metabarcoding analysis?</p>
+
+<p><a href="/assets/images/metacleaner-fig4.png"><img src="/assets/images/metacleaner-fig4.png" alt="metacleaner-figure4" /></a></p>
+
+<p><em>Figure 4. Reads assigned to genera represented in 10 honey samples collected from apiaries in Pennsylvania, USA (click to enlarge).</em></p>
+
+<p>Notable additions after filtering: orchids (<em>Aerides</em>), hemlock (<em>Conium</em>), St. John’s wort (<em>Hypericum</em>), apple (<em>Malus</em>), oak (<em>Quercus</em>), and willow (<em>Salix</em>), which we know honey bees frequent in Pennsylvania. A notable loss: <em>Dioscorea</em>, the majority of which are tropical.</p>
+
+<h2 id="caveat-and-conclusion">Caveat and conclusion</h2>
+
+<p>The obvious limitation of this approach is that it is highly conservative and will lead to possible reductions in taxonomic diversity represented in your metabarcoding analyses. Increasing the thresholds required for filtering will increase the number of genera represented in your database, but may increase the false-positive rate. Whatever percentage identity your bioinformatics pipeline requires to assign sequencing reads to genera should be at least the same threshold you require barcodes to differentiate genera. Otherwise, you are randomly assigning reads and inflating counts for some genera, which may dramatically skew the proportion of those genera represented in your samples.</p>
+
+<p>Hopefully this resource addresses this problem and is useful to the metabarcoding community. Please leave comments and suggestions below or on the <a href="https://github.com/sbresnahan/metacleaner">github repo</a>.</p>
+
+<h2 id="references">References</h2>
+
+<p>Rulik, B. et al. (2017). Using taxonomic consistency with semi-automated data pre-processing for high quality DNA barcodes. <em>Methods in Ecology and Evolution</em> 8: 1878-1887. <a href="https://doi.org/10.1111/2041-210X.12824">https://doi.org/10.1111/2041-210X.12824</a></p>
+
+<p>Kolter, A., Gemeinholzer, B. (2021). Internal transcribed spacer primer evaluation for vascular plant metabarcoding. <em>Metabarcoding and Metagenomics</em> 5: 133-152. <a href="https://doi.org/10.3897/mbmg.5.68155">https://doi.org/10.3897/mbmg.5.68155</a>.</p>
+
+<p>Kozlov, A. M., Zhang, J., Yilmaz, P., Glöckner, F. O., Stamatakis, A. (2016). Phylogeny-aware identification and correction of taxonomically mislabeled sequences. <em>Nucleic Acids Research</em> 44(11): 5022-5033. <a href="https://doi.org/10.1093/nar/gkw396">https://doi.org/10.1093/nar/gkw396</a>.</p>
+
+<p>Richardson, R. T., Sponsler, D. B., McMinn-Sauder, H., Johnson, R. M. (2020). MetaCurator: A hidden Markov model-based toolkit for extracting and curating sequences from taxonomically-informnative genetic markers. <em>Methods in Ecology and Evolution</em> 11: 181-186. <a href="https://doi.org/10.1111/2041-210X.13314">https://doi.org/10.1111/2041-210X.13314</a>.</p>
+
+<p>Rodríguez-Andrade, E., Stchigel, A. M., Terrab, A., Guarro, J., Cano-Lira, J. F. (2019). Diversity of xerotolerant and xerophilic fungi in honey. <em>IMA Fungus</em> 10: 20. <a href="https://doi.org/10.1186/s43008-019-0021-7">https://doi.org/10.1186/s43008-019-0021-7</a>.</p>
+
+                    </div>
+                </article>
+            </div>
+            <div class="blog-toc-sidebar">
+                <nav id="blog-toc" class="blog-toc-nav">
+                    <div class="blog-toc-title">Table of Contents</div>
+                    <ul class="blog-toc-list"></ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer border-top py-2 mt-5 bg-white small">
+    <div class="container-lg">
+        <div class="row my-3">
+            <div class="col-6">
+                <div class="text-muted">
+                    <i>Last updated: Jul 2026</i>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="text-right text-muted">
+                    <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js" integrity="sha512-XKa9Hemdy1Ui3KSGgJdgMyYlUg1gM+QhL6cnlyTe2qzMCYm4nAZ1PsVerQzTTXzonUR+dmswHqgJPuwCq1MaAg==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/github-buttons/2.14.2/buttons.min.js" integrity="sha512-OYwZx04hKFeFNYrWxIyo3atgGpb+cxU0ENWBZs72X7T9U+NoHPM1ftUn/Mfw7dRDXrqWA6M1wBg6z6fGE32aeA==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+              delimiters: [
+                  {left: '$$', right: '$$', display: true},
+                  {left: '$', right: '$', display: false}
+              ],
+              throwOnError : false
+            });
+
+            Prism.highlightAll();
+        });
+    </script>
+    <script src="/assets/js/blog.js"></script>
+    <script src="/assets/js/common.js"></script>
+    <script src="/assets/js/bubble_visual_hash.js"></script>
+    <script src="/assets/js/semantic_scholar_citation_count.js"></script>
+</body>
+</html>

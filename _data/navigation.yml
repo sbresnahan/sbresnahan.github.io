@@ -1,0 +1,16 @@
+pages:
+# NOTE: `name` must match the `navbar_title` in each page's front matter so the
+#       correct tab is highlighted. Items with `external: true` open in a new tab
+#       and use the URL as-is (no baseurl prefix).
+- name: Home
+  url: /
+- name: Publications
+  url: /publications
+- name: Software
+  url: /showcase
+- name: Blog
+  url: https://seantbresnahan.substack.com
+  external: true
+- name: CV
+  url: /assets/docs/STB_CV.pdf
+  external: true

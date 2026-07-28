@@ -1,0 +1,18 @@
+# Site settings
+title: "Sean T. Bresnahan"
+url: "https://seantbresnahan.com"
+baseurl: "" # root custom domain (no project subpath)
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+
+# Google Analytics (ported from previous site)
+google_analytics: "G-Q3F3WR2V68"
+
+collections:
+  - publications
+  - news
+  - showcase
+  - posts

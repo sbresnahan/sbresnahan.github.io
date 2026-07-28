@@ -1,0 +1,87 @@
+primary_name: "Sean T. Bresnahan"
+secondary_name: ""
+navbar_name: "Sean T. Bresnahan"
+
+positions:
+- name: Associate Data Scientist
+- name: Department of Epidemiology
+- name: MD Anderson Cancer Center
+
+email: "stbresnahan@mdanderson.org"
+cv_link: /assets/docs/STB_CV.pdf
+gscholar: yqoHycoAAAAJ
+github: sbresnahan
+linkedin: seantbresnahan
+bluesky: seantbres.bsky.social
+
+short_bio_text_justify: true
+short_bio: >-
+  <p>
+    I am a computational and molecular geneticist and an Associate Data Scientist in the
+    <a href="https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/epidemiology.html" target="_blank">Department of Epidemiology</a>
+    and the Institute for Data Science in Oncology at the University of Texas MD Anderson Cancer Center, where I work
+    with <a href="https://bhattacharya-lab.com" target="_blank">Dr. Arjun Bhattacharya</a> and
+    <a href="http://scheet.org" target="_blank">Dr. Paul Scheet</a>. My research asks how early-life environmental
+    exposures act through the genome, often through parent-of-origin and imprinting mechanisms, to shape lifelong
+    disease risk. I first pursued this in evolutionary genomics, studying intragenomic conflict and
+    gene-by-environment effects in social insects during my Ph.D., and I now study it in human placental biology,
+    where the same conflict between parental genomes plays out in the tissue that governs fetal development.
+  </p>
+  <p>
+    My current program builds isoform-resolved maps of placental gene regulation and uses them to explain how
+    genotype and prenatal exposure jointly program offspring health. Using long-read RNA sequencing, I assembled the
+    largest placental transcriptome to date, uncovering 14,985 novel isoforms of known genes that are absent from
+    standard adult-tissue annotations. On that foundation I am constructing the first multi-ancestry,
+    isoform-resolved placental GxE-xQTL atlas across roughly 2,200 placentas from nine cohorts and five ancestry
+    groups, mapping how gestational diabetes, pre-pregnancy obesity, and PFAS exposure modify fetal genetic control
+    of isoform expression, splicing, and alternative transcript usage. This spans cis-xQTL mapping within and across
+    ancestries, cross-ancestry fine-mapping and colocalization with childhood metabolic GWAS, locus-resolved
+    heritability partitioning, and decomposition of genetic signals into direct fetal versus maternal indirect
+    polygenic components. I also model parent-of-origin regulation and its disruption by exposure, accounting for
+    somatic mosaicism in the placenta.
+  </p>
+  <p>
+    Much of my methods work makes these observational analyses causal. I develop mediation frameworks that combine
+    genetically predicted expression as instruments with multi-omic negative controls, using generative adversarial
+    networks to calibrate confounding bias, released in the open-source
+    <a href="https://github.com/sbresnahan/iconic" target="_blank">ICONIC</a> R package. Alongside this, I run an
+    independent bioinformatics consulting practice, evaluating therapeutic targets through pan-cancer TCGA and DepMap
+    CRISPR analyses. I am currently seeking tenure-track Assistant Professor positions.
+  </p>
+
+portrait_url: /assets/images/photos/profile_small.jpg
+
+education:
+- name: The Pennsylvania State University
+  position: >-
+    Ph.D., Molecular, Cellular, and Integrative Biosciences
+  date: 2024
+- name: University of Nebraska at Omaha
+  position: B.S., Neuroscience
+  date: 2019
+
+experience:
+- name: MD Anderson Cancer Center
+  position: Associate Data Scientist
+  date: 2024 - present
+- name: Vindhya Data Science
+  position: Bioinformatics Data Science Contractor
+  date: 2026 - present
+- name: Merck &amp; Co.
+  position: Data &amp; AI / Genome Sciences Intern
+  date: 2024
+- name: The Pennsylvania State University
+  position: NSF Graduate Research Fellow
+  date: 2019 - 2024
+
+# Molecular / laboratory and computational skills (rendered by the Skills block
+# added to the experience_card widget).
+skills:
+- category: Molecular &amp; Laboratory
+  items: >-
+    Nucleic-acid extraction &amp; QC, PCR / qPCR, CRISPR/Cas9, RNAi, bacterial culture,
+    ChIP, ATAC, sequencing library preparation, Illumina &amp; Oxford Nanopore sequencing
+- category: Computational
+  items: >-
+    <strong>Advanced:</strong> R (incl. package development), Bash, HPC, AWS.
+    <strong>Intermediate:</strong> Python, MATLAB, C++
