@@ -1,9 +1,3 @@
 # Bold the site owner's name wherever it appears in author lists.
 "Sean T. Bresnahan":
   bold: true
-
-# Selected collaborators with public profiles (optional links).
-"Arjun Bhattacharya":
-  url: https://bhattacharya-lab.com
-"Christina M. Grozinger":
-  url: https://scholar.google.com/citations?user=uwKZaKIAAAAJ

@@ -41,12 +41,13 @@ short_bio: >-
     somatic mosaicism in the placenta.
   </p>
   <p>
-    Much of my methods work makes these observational analyses causal. I develop mediation frameworks that combine
-    genetically predicted expression as instruments with multi-omic negative controls, using generative adversarial
-    networks to calibrate confounding bias, released in the open-source
-    <a href="https://github.com/sbresnahan/iconic" target="_blank">ICONIC</a> R package. Alongside this, I run an
-    independent bioinformatics consulting practice, evaluating therapeutic targets through pan-cancer TCGA and DepMap
-    CRISPR analyses. I am currently seeking tenure-track Assistant Professor positions.
+    My methods work gives these observational analyses a principled, testable basis for causal claims under unmeasured confounding. 
+    I developed <a href="https://github.com/sbresnahan/iconic" target="_blank">ICONIC</a>, an open-source R package that unifies genetic instrumental variables 
+    and negative-control calibration in a single proximal causal-inference framework for total-effect and mediation analysis. 
+    ICONIC implements eight estimators spanning five confounding-control strategies, screens instrument and negative-control validity, 
+    and stress-tests estimator bias across plausible confounding scenarios calibrated to the user's own data by a hybrid GAN-copula generative model, 
+    recommending the most robust estimator for the data at hand. Alongside this, I run an independent bioinformatics consulting practice, 
+    evaluating therapeutic targets through pan-cancer TCGA and DepMap CRISPR analyses. I am currently seeking tenure-track Assistant Professor positions.
   </p>
 
 portrait_url: /assets/images/photos/profile_small.jpg
