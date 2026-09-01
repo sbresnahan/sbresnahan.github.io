@@ -4,6 +4,7 @@ date:           2026-08-31 00:01:00 +0000
 selected:       true
 cover:          /assets/images/covers/iconicFig1.png
 pub:            "medRxiv"
+pub_last:       '; <span class="badge badge-pill badge-publication badge-success">Preprint</span>'
 pub_date:       "2026"
 authors:
 - Sean T. Bresnahan
