@@ -13,5 +13,5 @@ authors:
 - Arjun Bhattacharya
 - Jonathan Y Huang
 links:
-  Paper: https://doi.org/10.64898/2026.08.26.26361466
+  Preprint: https://doi.org/10.64898/2026.08.26.26361466
 ---
