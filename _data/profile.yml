@@ -21,33 +21,40 @@ short_bio: >-
     <a href="https://www.mdanderson.org/research/departments-labs-institutes/departments-divisions/epidemiology.html" target="_blank">Department of Epidemiology</a>
     at the University of Texas MD Anderson Cancer Center, where I work
     with <a href="https://bhattacharya-lab.com" target="_blank">Dr. Arjun Bhattacharya</a> and
-    <a href="http://scheet.org" target="_blank">Dr. Paul Scheet</a>. My research asks how early-life environmental
-    exposures act through the genome, often through parent-of-origin and imprinting mechanisms, to shape lifelong
-    disease risk. I first pursued this in evolutionary genomics, studying intragenomic conflict and
-    gene-by-environment effects in social insects during my Ph.D., and I now study it in human placental biology,
-    where the same conflict between parental genomes plays out in the tissue that governs fetal development.
+    <a href="http://scheet.org" target="_blank">Dr. Paul Scheet</a>.
+    A central challenge in human genetics is connecting genetic variation to molecular function and phenotype:
+    most trait-associated loci remain mechanistically unresolved, in part because standard analyses aggregate
+    expression across all transcripts of a gene, masking regulatory effects that act on individual isoforms.
+    My research program closes this gap by building variant-to-function frameworks at isoform resolution,
+    premised on the idea that regulatory variation acts at the level of individual transcripts, in specific
+    cell types, developmental windows, and environmental contexts. I focus on human development, when gene
+    regulation is most dynamic, most environmentally sensitive, and most consequential for lifelong health,
+    and my primary system is the placenta, the interface of maternal-fetal communication and the conduit
+    through which intrauterine exposures shape offspring phenotypes.
   </p>
   <p>
-    My current program builds isoform-resolved maps of placental gene regulation and uses them to explain how
-    genotype and prenatal exposure jointly program offspring health. Using long-read RNA sequencing, I assembled the
-    largest placental transcriptome to date, uncovering 14,985 novel isoforms of known genes that are absent from
-    standard adult-tissue annotations. On that foundation I am constructing the first multi-ancestry,
-    isoform-resolved placental GxE-xQTL atlas across roughly 2,200 placentas from nine cohorts and five ancestry
-    groups, mapping how gestational diabetes, pre-pregnancy obesity, and PFAS exposure modify fetal genetic control
-    of isoform expression, splicing, and alternative transcript usage. This spans cis-xQTL mapping within and across
-    ancestries, cross-ancestry fine-mapping and colocalization with childhood metabolic GWAS, locus-resolved
-    heritability partitioning, and decomposition of genetic signals into direct fetal versus maternal indirect
-    polygenic components. I also model parent-of-origin regulation and its disruption by exposure, accounting for
-    somatic mosaicism in the placenta.
+    My program integrates three directions. First, I study how prenatal environmental exposures disrupt
+    placental gene regulation to program development. I led the first placenta-specific long-read
+    transcriptome reference, uncovering 14,985 novel isoforms absent from standard annotations, and I
+    co-coordinate a multi-ancestry placental xQTL atlas harmonizing 2,222 placentas from nine international
+    birth cohorts and four ancestry groups, mapping how gestational diabetes, maternal obesity, and PFAS
+    exposure modify fetal genetic control of isoform expression and splicing, and testing whether disruption
+    of parent-of-origin (imprinted) transcription links these exposures to offspring neurodevelopment.
+    Second, I am developing family-based designs in large genotyped trio cohorts to decompose maternal
+    indirect versus direct fetal genetic effects on childhood disease, including cancer. Third, I investigate
+    the evolutionary origins and disease relevance of placental gene regulation, including the imprinting
+    and transposable-element control shaped by intragenomic conflict, a throughline from my Ph.D. work on
+    parent-of-origin effects in social insects.
   </p>
   <p>
-    My methods work gives these observational analyses a principled, testable basis for causal claims under unmeasured confounding. 
-    I developed <a href="https://github.com/sbresnahan/iconic" target="_blank">ICONIC</a>, an open-source R package that unifies genetic instrumental variables 
-    and negative-control calibration in a single proximal causal-inference framework for total-effect and mediation analysis. 
-    ICONIC implements eight estimators spanning five confounding-control strategies, screens instrument and negative-control validity, 
-    and stress-tests estimator bias across plausible confounding scenarios calibrated to the user's own data by a hybrid GAN-copula generative model, 
-    recommending the most robust estimator for the data at hand. Alongside this, I run an independent bioinformatics consulting practice, 
-    evaluating therapeutic targets through pan-cancer TCGA and DepMap CRISPR analyses. I am currently seeking tenure-track Assistant Professor positions.
+    My methods work gives these observational analyses a principled, testable basis for causal claims under
+    unmeasured confounding. I developed
+    <a href="https://github.com/sbresnahan/iconic" target="_blank">ICONIC</a>, an open-source R package that
+    unifies genetic instrumental variables and negative-control calibration for causal mediation analysis of
+    multi-omics data, stress-testing estimators across complementary confounding-control strategies with
+    diagnostics calibrated to real omics covariance. Alongside this, I run an independent bioinformatics
+    consulting practice, evaluating therapeutic targets through pan-cancer TCGA and DepMap CRISPR analyses.
+    I am currently seeking tenure-track Assistant Professor positions.
   </p>
 
 portrait_url: /assets/images/photos/profile_small.jpg
