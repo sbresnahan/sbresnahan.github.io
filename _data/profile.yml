@@ -17,17 +17,15 @@ bluesky: seantbres.bsky.social
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    I am a computational geneticist studying how parental genomes and prenatal environments
+    I am a computational geneticist studying the evolutionary and developmental origins
+    of health and disease. I investigate how parental genomes and prenatal environments
     shape gene regulation and development. My interests span evolutionary biology, molecular
-    genetics, and environmental health, which converge in the placenta. I want to understand
-    both the evolutionary origins of these regulatory systems and their consequences for human development.
+    genetics, and environmental health, which converge in the placenta.
   </p>
   <p>
     My research combines computational methods and functional genomics to connect genetic
     variation to molecular function across diverse gene-regulatory mechanisms, including
     imprinting, transposon exonization, and splicing.
-    My doctoral work on parent-of-origin regulation in honey bees informs my comparative
-    perspective on parental contributions to development.
   </p>
   <p>
     I am an Associate Data Scientist in the
