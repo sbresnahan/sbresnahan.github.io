@@ -91,3 +91,94 @@ div.lazy {
 .email-text {
     font-family: Source Code Pro, monospace;
 }
+
+/* Home news: complete, year-grouped feed with truthful date precision. */
+.news-feed .news-item {
+    display: grid;
+    grid-template-columns: 4.3rem minmax(0, 1fr);
+    column-gap: 0.8rem;
+    padding: 0.6rem 0;
+    font-size: 0.94rem;
+    line-height: 1.55;
+}
+
+.news-feed .news-date {
+    font-size: 0.86rem;
+    padding-top: 0.1rem;
+    white-space: nowrap;
+}
+
+.news-feed .news-text {
+    overflow-wrap: anywhere;
+}
+
+.news-feed .news-status {
+    font-weight: 700;
+}
+
+/* Research: description, full-width artwork, then selected work at every width. */
+.research-page .research-section {
+    border-top: 1px solid #e9ecef;
+    margin-top: 1.8rem;
+    padding-top: 1.8rem;
+    scroll-margin-top: 6rem;
+}
+
+.research-page .research-section h2 {
+    line-height: 1.35;
+    margin-bottom: 1.2rem;
+}
+
+.research-page .research-section-stack {
+    display: block;
+}
+
+.research-page .research-art {
+    display: block;
+    float: none;
+    clear: both;
+    width: 100%;
+    max-width: 48rem;
+    margin: 1rem auto 1.25rem;
+}
+
+.research-page .research-art img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.research-page .research-links {
+    margin-bottom: 0;
+    padding-left: 1.2rem;
+}
+
+.research-page .research-links li {
+    padding: 0.2rem 0;
+    overflow-wrap: anywhere;
+}
+
+.research-overview a:focus-visible,
+.research-page a:focus-visible,
+.news-feed a:focus-visible {
+    outline: 2px solid #0279ee;
+    outline-offset: 3px;
+}
+
+.research-overview img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.research-page #maternal-fetal {
+    display: block;
+    scroll-margin-top: 6rem;
+}
+
+@media (max-width: 767.98px) {
+    .news-feed .news-item {
+        grid-template-columns: 3.7rem minmax(0, 1fr);
+        column-gap: 0.6rem;
+    }
+}

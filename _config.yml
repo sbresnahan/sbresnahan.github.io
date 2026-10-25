@@ -2,6 +2,12 @@
 title: "Sean T. Bresnahan"
 url: "https://seantbresnahan.com"
 baseurl: "" # root custom domain (no project subpath)
+description: "Computational genetics of parental genomes, prenatal environments, and gene regulation."
+social_image:
+  path: /assets/images/social_preview.png
+  width: 1280
+  height: 640
+  alt: "Research overview connecting evolutionary origins, placental functional genomics, and environmental modification of genetic risk."
 
 # Build settings
 markdown: kramdown
@@ -16,3 +22,18 @@ collections:
   - news
   - showcase
   - posts
+
+# Keep build products, local dependencies, and repository documentation off the site.
+exclude:
+  - _site
+  - .bundle
+  - .github
+  - .gitignore
+  - .ruby-version
+  - .DS_Store
+  - vendor
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE

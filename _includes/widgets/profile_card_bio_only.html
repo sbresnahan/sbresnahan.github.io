@@ -4,20 +4,26 @@
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
                 <div class="row px-3 pt-3">
-                    <div class="col h3">
+                    <h1 class="col h3">
                         About Me
-                    </div>
+                    </h1>
                 </div>
                 <div class="row p-3">
                     <div class="col">
                         <div class="text-profile-bio mt-0" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
                             {{ site.data.profile.short_bio }}
                         </div>
-                        {% if site.data.profile.cv_link %}
-                            <a target="_blank" href="{{ site.data.profile.cv_link | relative_url }}"><i class="fas fa-file-alt"></i> Curriculum Vitae</a> <br/>
-                        {% endif %}
-                        <figure class="text-center mt-4 mb-0">
-                            <img src="{{ '/assets/images/photos/research_program_overview.png' | relative_url }}" class="img-fluid" alt="Overview of my research program: evolutionary-developmental origins of health and disease" loading="lazy">
+                        <a href="{{ '/research/' | relative_url }}">Explore my research &rarr;</a>
+                        <figure class="research-overview mt-4 mb-0">
+                            <a href="{{ '/assets/images/photos/research_program_overview.png' | relative_url }}" aria-label="View the original research program overview at full size">
+                                <img src="{{ '/assets/images/photos/research_program_overview.png' | relative_url }}"
+                                     alt="Original three-arm research overview: comparative evolutionary origins, isoform-resolution placental functional genomics, and environmental modification of genetic risk. The left and center arms connect evolutionary regulation; the center and right connect maternal influences with offspring health."
+                                     class="img-fluid" loading="lazy">
+                            </a>
+                            <figcaption class="small text-muted mt-2">
+                                Two overlapping directions: evolutionary regulation (left + center) and
+                                maternal influences on offspring health (center + right).
+                            </figcaption>
                         </figure>
                     </div>
         

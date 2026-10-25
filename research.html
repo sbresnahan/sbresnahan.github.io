@@ -1,0 +1,111 @@
+---
+layout: default
+title: Research
+navbar_title: Research
+permalink: /research/
+---
+
+<div class="row">
+    <div class="col-lg-3 col-md-4">
+        {% include widgets/profile_card_mini.html %}
+    </div>
+    <div class="col-lg-9 col-md-8">
+        <article class="card border-0 shadow-sm bg-white research-page mt-3 mt-md-0">
+            <div class="card-body p-4">
+                <h1 class="h3 mb-3">Research</h1>
+                <p>
+                    I study how parental genomes and prenatal environments shape gene regulation and development.
+                    Two overlapping directions connect evolutionary questions about regulatory systems with
+                    their consequences for offspring health. Isoform-resolution functional genomics of the
+                    placenta provides a shared foundation.
+                </p>
+
+                <section class="research-section" id="environment">
+                    <span id="maternal-fetal" aria-hidden="true"></span>
+                    <h2 class="h4">How do prenatal environments reshape placental gene regulation and offspring health?</h2>
+                    <div class="research-section-stack">
+                        <div>
+                            <p>
+                                I investigate how maternal exposures, metabolic conditions, and genetic variation
+                                shape the prenatal environment, placental gene regulation, and offspring health.
+                                My placenta-specific long-read transcriptome reference provides a foundation for
+                                resolving individual transcript isoforms. I am building multi-ancestry regulatory
+                                maps to examine how PFAS exposure, gestational diabetes, and maternal obesity
+                                relate to placental expression and parent-of-origin regulation.
+                            </p>
+                            <p>
+                                A complementary question is how maternal genetic influences acting through
+                                pregnancy differ from variants inherited by the child. I am developing family-based
+                                analyses using transmitted and non-transmitted alleles to separate these pathways,
+                                with an interest in neurodevelopment and childhood cancer. I develop
+                                <a href="https://github.com/sbresnahan/iconic">ICONIC</a> to assess causal assumptions
+                                in observational multi-omics using genetic instruments and negative controls.
+                                Alongside these analyses, I am developing functional follow-up strategies in
+                                placental organoids to test candidate regulatory mechanisms. The goal is to
+                                distinguish associations from mechanisms linking maternal influences to offspring health.
+                            </p>
+                        </div>
+                        <figure class="research-art">
+                            <a href="{{ '/assets/images/research/research_maternal_placental_health_v2.png' | relative_url }}" aria-label="View the prenatal environment and offspring health illustration at full size">
+                                <img src="{{ '/assets/images/research/research_maternal_placental_health_v2.png' | relative_url }}"
+                                     alt="Maternal genetics and prenatal exposures connect to placental regulation; fetal genetics connect to placental regulation and offspring health. A solid arrow denotes inheritance, while dashed arrows mark pathways under investigation."
+                                     width="1536" height="1024" loading="lazy">
+                            </a>
+                        </figure>
+                    </div>
+                    <p class="small font-weight-bold mb-1">Selected work</p>
+                    <ul class="research-links small">
+                        <li><a href="https://doi.org/10.1038/s41467-026-71303-4">Long-read assembly of the placental transcriptome</a> &mdash; Nature Communications, 2026</li>
+                        <li><a href="https://doi.org/10.1021/EHP.6c00646">Transplacental PFAS transfer and placental transcriptional networks</a> &mdash; Environmental Health Perspectives, 2026</li>
+                        <li><a href="https://doi.org/10.64898/2026.08.26.26361466">ICONIC: causal-inference methods and diagnostics for multi-omics</a> &mdash; preprint, 2026; <a href="https://github.com/sbresnahan/iconic">software</a></li>
+                    </ul>
+                    <p class="small font-weight-bold mt-3 mb-1">Related cancer genomics and methods</p>
+                    <ul class="research-links small">
+                        <li><a href="https://doi.org/10.1038/s41416-025-03141-y">Isoform-level analyses of six cancers</a> &mdash; British Journal of Cancer, 2025</li>
+                        <li><a href="https://doi.org/10.64898/2026.03.22.713514">Long-read transcript assemblies and breast cancer risk</a> &mdash; preprint, 2026</li>
+                        <li><a href="https://doi.org/10.1101/2025.08.20.671303">Quantification, eQTL replicability, colocalization, and TWAS</a> &mdash; preprint, 2025</li>
+                    </ul>
+                </section>
+
+                <section class="research-section" id="evolution">
+                    <h2 class="h4">How does evolutionary conflict shape gene regulation in nutritive tissues?</h2>
+                    <div class="research-section-stack">
+                        <div>
+                            <p>
+                                Nutritive tissues mediate resource transfer between mothers and offspring, creating
+                                a setting in which parental genetic interests can diverge. I investigate how this
+                                conflict shapes gene regulation in animals, focusing on placental mammals and
+                                comparative questions in live-bearing fishes. I ask whether independent origins
+                                of placentation reveal shared regulatory pressures, and how parent-of-origin
+                                regulation and transposable-element-derived sequences contribute to these systems.
+                            </p>
+                            <p>
+                                My doctoral work in honey bees provides an intellectual and methodological
+                                foundation: reciprocal crosses and allele-specific genomic analyses offer ways
+                                to study parental contributions to behavior and queen–worker development.
+                                Honey bees are a comparative foundation, not a placental model. I connect these
+                                perspectives through isoform-resolution genomics and comparative regulatory analyses,
+                                without assuming identical imprinting mechanisms across species. The central
+                                question is when evolutionary conflict produces similar regulatory solutions
+                                in independently evolved animal nutritive tissues.
+                            </p>
+                        </div>
+                        <figure class="research-art">
+                            <a href="{{ '/assets/images/research/research_nutritive_evolution_v2.png' | relative_url }}" aria-label="View the evolution of animal nutritive tissues illustration at full size">
+                                <img src="{{ '/assets/images/research/research_nutritive_evolution_v2.png' | relative_url }}"
+                                     alt="Conceptual questions about resource allocation across a placental interface, parent-of-origin regulation, and regulatory innovation, alongside mouse and fish silhouettes for comparative placentation."
+                                     width="1536" height="1024" loading="lazy">
+                            </a>
+                        </figure>
+                    </div>
+                    <p class="small font-weight-bold mb-1">Comparative foundations</p>
+                    <ul class="research-links small">
+                        <li><a href="https://doi.org/10.1186/s13059-025-03628-0">Intragenomic conflict and queen–worker caste determination</a> &mdash; Genome Biology, 2025</li>
+                        <li><a href="https://doi.org/10.1111/mec.17145">Kinship theory and variation in altruistic behavior</a> &mdash; Molecular Ecology, 2023</li>
+                        <li><a href="https://doi.org/10.1186/s12864-023-09411-4">Parent-of-origin effects in honey bee aggression</a> &mdash; BMC Genomics, 2023</li>
+                    </ul>
+                </section>
+            </div>
+        </article>
+    </div>
+</div>

@@ -1,88 +1,74 @@
-# academic-homepage
+# Sean T. Bresnahan — research website
 
-[![Preview](assets/images/etc/preview.png)](https://luost26.github.io/academic-homepage/)
+Editable Jekyll source for `sbresnahan/sbresnahan.github.io`, published at
+`https://seantbresnahan.com`.
 
-[![pages-build-deployment](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/luost26/academic-homepage/actions/workflows/pages/pages-build-deployment)
-[![Hits](https://hits.sh/github.com/luost26/academic-homepage.svg?view=today-total)](https://hits.sh/github.com/luost26/academic-homepage/)
-[![GitHub stars](https://img.shields.io/github/stars/luost26/academic-homepage)](https://github.com/luost26/academic-homepage)
-[![GitHub forks](https://img.shields.io/github/forks/luost26/academic-homepage)](https://github.com/luost26/academic-homepage/forks)
-<!--[![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)](https://validator.nu/?doc=https%3A%2F%2Fluost26.github.io%2Facademic-homepage)-->
+## GitHub Pages
 
-A GitHub Pages (Jekyll) template for personal academic website. Click [here](https://luost26.github.io/academic-homepage/) to see the demo.
+The contents of this directory belong at the repository root. Include the hidden
+`.github/`, `.gitignore`, and `.ruby-version` files. Do not nest the site in a
+`source/` folder in the repository, and do not upload the separate HTML preview.
 
-## User Community
+1. Commit the source to a review branch in the existing repository.
+2. In **Settings → Pages → Build and deployment**, select **GitHub Actions**.
+3. Preserve **seantbresnahan.com** in the custom-domain setting.
+4. Merge the reviewed changes into `main`.
+5. Inspect **Actions → Build and deploy Jekyll site** for the build/deployment result.
 
-[🏡](https://luost.me/)
-[:star:](https://cch1999.github.io/)
-[:star:](https://kyrrego.github.io/)
-[:star:](https://ced3-han.github.io/)
-[:star:](https://lihengchen.com/)
-[:star:](https://hpwang-whu.github.io/)
-[:star:](https://zhang-yingyi.github.io/)
-[:star:](https://wby24.github.io/)
-[:star:](https://pengfeixu.com/)
-[:star:](https://boqiuphd.github.io/)
-[:star:](https://www.huabing.li/)
-[:star:](https://xiecuiying.github.io/)
-[:star:](https://hannyang.github.io/)
-[:star:](https://king-play.github.io/)
-[🤖](https://andrewcwlee.github.io)
-[:star:](https://laiyao1.github.io)
-[🌜](https://tmsultan.github.io)
-[🚀](https://zaxguo.github.io)
-[:gemini:](https://hongyang-du.github.io)
-[:star:](https://thuanz123.github.io)
-[🧬](https://gdalba.github.io/)
-[:star:](https://yhhan.com/)
-[🌔](https://chen-huaneng.github.io/academic)
-[:star:](https://jwklee.github.io/)
-[😼](https://onethousandwu.com/)
-[🔬](https://kwen-chen.github.io/)
-[🧑‍🔬](https://shengxiang-lin.github.io/)
-[🗣️](https://henry-h22.github.io/)
+The included `.github/workflows/pages.yml` builds with Ruby 3.2.3, Bundler 4.0.17,
+and the checked-in Gemfile.lock. Pushes to `main` and manual workflow runs trigger
+the workflow. No personal access token is needed in this package.
 
-:hugs: Feel free to tell us if you are using this template for your website by creating an issue [here](https://github.com/luost26/academic-homepage/issues/new?assignees=&labels=&projects=&template=user-report.md&title=I+am+using+this+template%21).
+The full setup guide supplied with the v4 archive explains file placement,
+existing-site migration, domain settings, previewing, and troubleshooting.
 
-### Acknowledgements
+## Local source build
 
-The improvements of this template have been inspired by the customizations and feedbacks from the following users:
-- 😼 [onethousandwu.com](https://onethousandwu.com/): increased corner radius [[Repo]](https://github.com/oneThousand1000/oneThousand1000.github.io)
-- :star: [shiwonkim.github.io](https://shiwonkim.github.io/): two-column main page layout [[Repo]](https://github.com/shiwonkim/shiwonkim.github.io)
-- :star: [yqxie99.github.io](https://yqxie99.github.io/): blog feature [[Repo]](https://github.com/YQXie99/YQXie99.github.io/tree/feat/add_blog_page)
-- :star: [kwen-chen.github.io](https://kwen-chen.github.io/): blog feature [[Repo]](https://github.com/Kwen-Chen/Kwen-Chen.github.io)
+With Ruby 3.2.3 and native gem build prerequisites installed:
 
-## Need Help?
+```bash
+gem install bundler -v 4.0.17
+bundle _4.0.17_ install
+bundle _4.0.17_ exec jekyll serve
+```
 
-If you run into **any** issues while using this template, or have suggestions for improvements, please don't hesitate to create an issue [here](https://github.com/luost26/academic-homepage/issues/new).
+Use the URL Jekyll prints. Production builds use:
 
-### FAQs
+```bash
+JEKYLL_ENV=production bundle _4.0.17_ exec jekyll build --destination _site --trace
+```
 
-- [Need blogging feature?](https://github.com/luost26/academic-homepage/issues/13#issuecomment-2646371324)
-- [How to show citation count for papers?](https://github.com/luost26/academic-homepage/issues/29#issuecomment-3222496187)
+The separate built preview in the archive needs only Node.js:
+run `node serve-preview.cjs` **inside `preview/`**, then visit
+`http://127.0.0.1:8000/`. Do not double-click HTML files.
 
+## Editing content
 
-## Getting Started
+- Biography/contact information: `_data/profile.yml`
+- Research: `research.html`
+- Research illustrations: `assets/images/research/`
+- Original homepage overview: `assets/images/photos/research_program_overview.png`
+- Individual news milestones: `_news/`
+- Publication records: `_publications/`
+- Navigation: `_data/navigation.yml`
+- Theme styles: `assets/css/global.css`
+- Shared icon/social metadata: `_includes/head_metadata.html`
+- Original DNA icon: `assets/images/site_icon.png`
+- Shared social-preview image: `assets/images/social_preview.png`
+- Default social description, image dimensions, and alt text: `_config.yml`
 
-1. First, click the "Use this template" button to create a new repository. The name of the repository should be `<your-github-username>.github.io` (click [here](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#types-of-github-pages-sites) to learn more about naming a GitHub Pages repository).
+Every page layout uses the same supplied social image, with page-specific titles
+and URLs. Browser/device icon variants at the repository root were derived from
+the supplied DNA icon. Upload the complete source to include these assets.
+Replacing only `assets/images/site_icon.png` later will not regenerate the smaller
+icon variants automatically; the workflow performs a Jekyll build, not image conversion.
 
-### Running Locally (Debug & Preview)
+Keep `url: "https://seantbresnahan.com"` and `baseurl: ""` for the existing root
+custom-domain deployment. Generated `_site/`, dependencies, and caches are ignored.
+Do not place private application PDFs or credentials in this public source.
 
-2. Follow the **step 1** and **step 2** of the instruction [here](https://jekyllrb.com/docs/) to install prerequisites and jekyll.
+## Theme attribution
 
-3. Clone your forked repository to your local machine.
-
-4. Run the following command in the root directory of the repository:
-
-   ```bash
-   bundle exec jekyll serve
-   ```
-
-5. Browse to the displayed URL to see the website.
-
-
-### Deploying to GitHub Pages
-
-2. Go to the repository settings and enable GitHub Pages. Detailed instructions can be found [here](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site).
-
-3. Navigate to your created website, and follow the instructions displayed on the homepage (if any) to finalize the setup.
-
+The existing site is based on
+[academic-homepage](https://github.com/luost26/academic-homepage).
+Its original license is retained in `LICENSE`.
