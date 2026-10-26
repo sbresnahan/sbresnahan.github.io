@@ -21,7 +21,7 @@ The included `.github/workflows/pages.yml` builds with Ruby 3.2.3, Bundler 4.0.1
 and the checked-in Gemfile.lock. Pushes to `main` and manual workflow runs trigger
 the workflow. No personal access token is needed in this package.
 
-The full setup guide supplied with the v6 archive explains file placement,
+The full setup guide supplied with the v8 archive explains file placement,
 existing-site migration, domain settings, previewing, and troubleshooting.
 
 ## Local source build
