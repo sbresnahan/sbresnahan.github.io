@@ -28,7 +28,6 @@ exclude:
   - _site
   - .bundle
   - .github
-  - .gitignore
   - .ruby-version
   - .DS_Store
   - vendor
